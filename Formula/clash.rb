@@ -1,26 +1,26 @@
 class Clash < Formula
-  desc "Manage merge conflicts across git worktrees for parallel AI coding agents"
+  desc "Avoid merge conflicts across git worktrees for parallel AI coding agents"
   homepage "https://clash.sh"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clash-sh/clash/releases/download/v0.1.0/clash-aarch64-apple-darwin.tar.gz"
-      sha256 "8e048ad888ad57897b6667f33687a16b4b9d29a801a54615c50610e08d90209a"
+      url "https://github.com/clash-sh/clash/releases/download/v0.2.0/clash-aarch64-apple-darwin.tar.gz"
+      sha256 "b454ccf7fe120aec35d9225aa9a30da7b62edf204c9bd4feca8ff7cdbcf96d98"
     else
-      url "https://github.com/clash-sh/clash/releases/download/v0.1.0/clash-x86_64-apple-darwin.tar.gz"
-      sha256 "4198b426ac417a49204b51fce9c0ef71cef1fee900a3a336fe4ed1635c974a68"
+      url "https://github.com/clash-sh/clash/releases/download/v0.2.0/clash-x86_64-apple-darwin.tar.gz"
+      sha256 "1778a28805883650264ba514710ceea9682c8c4135e46a74a2aa4f10d522dd7a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/clash-sh/clash/releases/download/v0.1.0/clash-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e78adf63b0584ca9385f3a40204ad3f732ccae40977c3b177219463d6edd0255"
+      url "https://github.com/clash-sh/clash/releases/download/v0.2.0/clash-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "90e126e80180f61d51f6d555c792e5e82f4b91326669d90e76f7fcc4b859570b"
     else
-      url "https://github.com/clash-sh/clash/releases/download/v0.1.0/clash-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "021546c4a5e9c82191f63e0c616b04d458553646643681a27436ae7fe9cf5f8e"
+      url "https://github.com/clash-sh/clash/releases/download/v0.2.0/clash-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "562c33968037b58e04e04fb885d92f792f469184841fa9126e17a64105da1785"
     end
   end
 
